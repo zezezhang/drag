@@ -1,6 +1,7 @@
 /**
  * Created by Yanyan on 2016/1/29.
  */
-function drag(){
-
+function drag(id){
+    var obj=document.getElementById(id);
+    obj.onmousedown=function(){};
 }
