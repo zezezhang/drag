@@ -8,5 +8,9 @@ function drag(id){
     obj.onmousedown=function(ev){
         disX=ev.clientX-obj.offsetLeft;
         disY=ev.clientY-obj.offsetTop;
+        document.onmousemove=function(ev){
+            obj.style.left=ev.clientX-disX+"px";
+            obj.style.top=ev.clientY-disY+"px";
+        };
     }
 }
